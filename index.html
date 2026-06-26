@@ -3,200 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="עו״ד גלית אביטל — ליווי משפטי מקצועי, אדיב ומדויק בעסקאות נדל״ן באזור ערד, הנגב, מיתר, דימונה, באר שבע והסביבה." />
+  <meta name="description" content="עו״ד גלית אביטל — ליווי משפטי מקצועי, אדיב וברור בעסקאות נדל״ן באזור ערד, הנגב, מיתר, דימונה, באר שבע והסביבה." />
   <title>עו״ד גלית אביטל | נדל״ן בערד והנגב</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Noto+Serif+Hebrew:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root{
-      --ink:#152238;
-      --navy:#102033;
-      --navy-2:#172b46;
-      --sand:#f5efe5;
-      --paper:#fffaf2;
-      --gold:#b78b48;
-      --gold-2:#dfbd7d;
-      --sage:#6e7d6a;
-      --muted:#667085;
-      --line:rgba(21,34,56,.14);
-      --shadow:0 28px 80px rgba(16,32,51,.16);
-      --radius:28px;
+      --ink:#153043;
+      --blue:#246b8f;
+      --blue-2:#4395bc;
+      --mint:#7bc7b7;
+      --peach:#f2a66d;
+      --cream:#fff7ed;
+      --sky:#eef8fb;
+      --paper:#ffffff;
+      --muted:#607386;
+      --line:rgba(36,107,143,.16);
+      --shadow:0 24px 70px rgba(36,107,143,.16);
+      --radius:30px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;font-family:Assistant,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--sand);color:var(--ink);line-height:1.65;overflow-x:hidden}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-3;background:
-      radial-gradient(circle at 12% 5%, rgba(223,189,125,.33), transparent 28vw),
-      radial-gradient(circle at 88% 12%, rgba(110,125,106,.18), transparent 28vw),
-      linear-gradient(180deg,#fff9ef 0%,#f5efe5 42%,#efe4d4 100%)}
-    a{color:inherit;text-decoration:none}
-    .shell{width:min(1120px,calc(100% - 36px));margin-inline:auto}
-    .topbar{position:fixed;top:14px;left:0;right:0;z-index:20;pointer-events:none}
-    .nav{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 16px;border:1px solid rgba(255,255,255,.55);background:rgba(255,250,242,.78);backdrop-filter:blur(16px);border-radius:999px;box-shadow:0 14px 50px rgba(16,32,51,.10)}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.01em;color:var(--navy)}
-    .mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--navy),#284565);font-family:"Noto Serif Hebrew",serif;font-weight:700;box-shadow:0 10px 30px rgba(16,32,51,.22)}
-    .navlinks{display:flex;align-items:center;gap:20px;color:#31445d;font-weight:700;font-size:.96rem}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 20px;font-weight:800;background:var(--navy);color:#fff;box-shadow:0 14px 34px rgba(16,32,51,.24);transition:.25s ease;white-space:nowrap}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(16,32,51,.30)}
-    .btn.light{background:#fff;color:var(--navy);border:1px solid rgba(21,34,56,.12);box-shadow:none}
-    .hero{min-height:100svh;display:grid;align-items:center;padding:120px 0 62px;position:relative;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}
-    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.92rem}.eyebrow:before{content:"";width:42px;height:1px;background:currentColor}
-    h1{font-family:"Noto Serif Hebrew",serif;font-size:clamp(3rem,7vw,6.7rem);line-height:.94;margin:18px 0 20px;color:var(--navy);letter-spacing:-.055em}.h1-small{display:block;font-size:.44em;letter-spacing:-.025em;color:var(--gold);margin-top:12px}
-    .lead{font-size:clamp(1.18rem,2vw,1.45rem);color:#394b62;max-width:680px;margin:0 0 28px}.lead strong{color:var(--navy)}
-    .actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;max-width:680px}.trust div{background:rgba(255,250,242,.72);border:1px solid rgba(21,34,56,.10);border-radius:18px;padding:16px}.trust b{display:block;font-size:1.08rem;color:var(--navy)}.trust span{display:block;color:var(--muted);font-weight:600;font-size:.95rem;margin-top:2px}
-    .hero-card{position:relative;min-height:640px;border-radius:42px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(145deg,#14243a,#233c5d);isolation:isolate}.hero-card:before{content:"";position:absolute;inset:0;background:
-      linear-gradient(180deg,rgba(16,32,51,.05),rgba(16,32,51,.50)),
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 1150'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23f5efe5'/%3E%3Cstop offset='.48' stop-color='%23d9bf8d'/%3E%3Cstop offset='1' stop-color='%23102033'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='1150' fill='url(%23g)'/%3E%3Cg opacity='.88'%3E%3Cpath d='M65 880 C205 760 330 710 495 690 C640 672 763 605 865 478 L865 1150 L65 1150 Z' fill='%23102033'/%3E%3Cpath d='M40 910 C246 780 396 740 535 724 C666 708 770 660 878 560' fill='none' stroke='%23dfbd7d' stroke-width='7'/%3E%3Cpath d='M104 836 C278 720 420 680 565 658 C685 640 768 590 862 490' fill='none' stroke='%23fffaf2' stroke-opacity='.34' stroke-width='3'/%3E%3C/g%3E%3Cg transform='translate(118 168)' opacity='.95'%3E%3Crect x='0' y='95' width='230' height='370' rx='16' fill='%23fffaf2' opacity='.9'/%3E%3Crect x='38' y='132' width='154' height='13' rx='6' fill='%23102033' opacity='.35'/%3E%3Crect x='38' y='184' width='154' height='8' rx='4' fill='%23b78b48' opacity='.55'/%3E%3Crect x='38' y='216' width='154' height='8' rx='4' fill='%23102033' opacity='.16'/%3E%3Crect x='38' y='248' width='124' height='8' rx='4' fill='%23102033' opacity='.16'/%3E%3Ccircle cx='170' cy='378' r='34' fill='%23b78b48' opacity='.84'/%3E%3Cpath d='M320 472 L560 280 L798 472 Z' fill='%23fffaf2' opacity='.78'/%3E%3Cpath d='M365 472 L365 720 L755 720 L755 472' fill='%23fffaf2' opacity='.72'/%3E%3Crect x='470' y='548' width='88' height='172' rx='8' fill='%23102033' opacity='.56'/%3E%3Crect x='595' y='535' width='90' height='72' rx='8' fill='%23b78b48' opacity='.58'/%3E%3C/g%3E%3Cg opacity='.34' fill='none' stroke='%23fffaf2'%3E%3Cpath d='M740 80 l38 66 l-76 0 z'/%3E%3Cpath d='M706 147 h110'/%3E%3Cpath d='M760 147 v138'/%3E%3Cpath d='M700 285 h122'/%3E%3C/g%3E%3C/svg%3E") center/cover;z-index:-1}.hero-card:after{content:"";position:absolute;inset:26px;border:1px solid rgba(255,255,255,.36);border-radius:30px;pointer-events:none}.quote{position:absolute;right:28px;bottom:28px;left:28px;padding:24px;border-radius:28px;background:rgba(255,250,242,.86);backdrop-filter:blur(12px);box-shadow:0 18px 50px rgba(0,0,0,.16)}.quote p{font-family:"Noto Serif Hebrew",serif;margin:0;color:var(--navy);font-size:1.35rem;line-height:1.35}.quote span{display:block;color:var(--muted);font-weight:700;margin-top:10px}
-    section{padding:86px 0}.section-title{font-family:"Noto Serif Hebrew",serif;font-size:clamp(2.2rem,4.4vw,4.2rem);line-height:1;margin:0 0 18px;color:var(--navy);letter-spacing:-.04em}.section-kicker{color:var(--gold);font-weight:800;margin-bottom:8px}.two{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}.text-card{background:rgba(255,250,242,.78);border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:0 18px 60px rgba(16,32,51,.07)}.text-card p{margin:0 0 16px;color:#3d4d61;font-size:1.12rem}.text-card p:last-child{margin-bottom:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.service{position:relative;padding:28px;border-radius:28px;background:#fffaf2;border:1px solid var(--line);min-height:230px;overflow:hidden;box-shadow:0 18px 52px rgba(16,32,51,.08)}.service:before{content:"";position:absolute;inset:auto -40px -60px auto;width:160px;height:160px;border-radius:50%;background:rgba(183,139,72,.12)}.num{font-family:"Noto Serif Hebrew",serif;color:var(--gold);font-size:2.15rem;font-weight:700}.service h3{font-size:1.35rem;color:var(--navy);margin:18px 0 10px}.service p{color:#536274;margin:0;font-weight:600}.areas{background:var(--navy);color:#fff;position:relative;overflow:hidden}.areas:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(183,139,72,.17),transparent 45%),radial-gradient(circle at 18% 25%,rgba(223,189,125,.20),transparent 34vw)}.areas .shell{position:relative}.areas .section-title{color:#fff}.areas p{color:#d6deea;font-size:1.15rem}.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.chip{padding:12px 18px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.08);font-weight:800;color:#fff}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}.step{padding:22px;border-radius:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16)}.step b{display:block;color:var(--gold-2);font-size:1.1rem;margin-bottom:6px}.step span{color:#dce5f0;font-weight:600}.gallery{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin-top:34px}.visual{min-height:360px;border-radius:34px;position:relative;overflow:hidden;background:linear-gradient(135deg,#fffaf2,#e5d2aa);border:1px solid var(--line);box-shadow:var(--shadow)}.visual:before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='520' viewBox='0 0 900 520'%3E%3Crect width='900' height='520' fill='%23fffaf2'/%3E%3Cg opacity='.88'%3E%3Cpath d='M0 380 C145 270 235 270 380 315 C540 365 720 260 900 95 L900 520 L0 520Z' fill='%23102033'/%3E%3Cpath d='M0 392 C145 286 255 285 400 329 C560 378 735 280 900 120' fill='none' stroke='%23b78b48' stroke-width='8'/%3E%3Cpath d='M95 308 L250 200 L405 308 Z' fill='%23e1c997'/%3E%3Cpath d='M130 308 H370 V446 H130Z' fill='%23f4ead8'/%3E%3Crect x='190' y='356' width='64' height='90' rx='8' fill='%23102033' opacity='.64'/%3E%3Crect x='285' y='345' width='48' height='46' rx='6' fill='%23b78b48' opacity='.68'/%3E%3Cpath d='M545 150 h160 a30 30 0 0 1 30 30 v210 a30 30 0 0 1-30 30 h-160 a30 30 0 0 1-30-30 v-210 a30 30 0 0 1 30-30Z' fill='%23fffaf2' opacity='.92'/%3E%3Crect x='555' y='198' width='145' height='10' rx='5' fill='%23102033' opacity='.25'/%3E%3Crect x='555' y='238' width='120' height='8' rx='4' fill='%23b78b48' opacity='.62'/%3E%3Crect x='555' y='270' width='145' height='8' rx='4' fill='%23102033' opacity='.14'/%3E%3Crect x='555' y='302' width='128' height='8' rx='4' fill='%23102033' opacity='.14'/%3E%3C/g%3E%3C/svg%3E") center/cover}.mini-stack{display:grid;gap:18px}.mini{min-height:171px;border-radius:30px;background:#fffaf2;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}.mini:before{content:"";position:absolute;width:170px;height:170px;border:1px solid rgba(183,139,72,.30);border-radius:50%;top:-58px;left:-48px}.mini b{font-family:"Noto Serif Hebrew",serif;color:var(--navy);font-size:1.45rem}.mini span{color:var(--muted);font-weight:700}.cta{padding:72px 0 92px}.cta-box{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:linear-gradient(135deg,#fffaf2,#ead8b6);border:1px solid rgba(183,139,72,.25);border-radius:38px;padding:40px;box-shadow:var(--shadow)}.cta h2{font-family:"Noto Serif Hebrew",serif;font-size:clamp(2rem,4vw,3.6rem);line-height:1;margin:0;color:var(--navy)}.cta p{font-size:1.15rem;color:#48596d;margin:12px 0 0}.footer{padding:28px 0 44px;color:#657383;font-weight:700}.footer .shell{display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:22px}.note{font-size:.9rem;color:#7a8492;margin-top:18px}
-    .ig-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.ig-card{position:relative;overflow:hidden;border-radius:28px;background:#fffaf2;border:1px solid var(--line);box-shadow:0 18px 48px rgba(16,32,51,.10);min-height:310px}.ig-card img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92) contrast(.98)}.ig-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(16,32,51,.70))}.ig-label{position:absolute;right:18px;left:18px;bottom:16px;z-index:2;color:#fff;font-weight:800}.ig-label small{display:block;color:#dfbd7d;font-size:.9rem;margin-top:3px}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}.btn.gold{background:linear-gradient(135deg,var(--gold),#d4af70);color:#102033}.source-line{margin-top:12px;color:#7a8492;font-weight:700}
+    body{margin:0;font-family:Heebo,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.7;background:
+      radial-gradient(circle at 8% 8%, rgba(123,199,183,.28), transparent 26vw),
+      radial-gradient(circle at 92% 16%, rgba(242,166,109,.22), transparent 26vw),
+      linear-gradient(180deg,#fbfdff 0%,#eef8fb 45%,#fff7ed 100%);overflow-x:hidden}
+    a{color:inherit;text-decoration:none}.shell{width:min(1120px,calc(100% - 36px));margin-inline:auto}
+    .topbar{position:fixed;top:14px;left:0;right:0;z-index:20;pointer-events:none}.nav{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 14px;border:1px solid rgba(255,255,255,.72);background:rgba(255,255,255,.80);backdrop-filter:blur(16px);border-radius:999px;box-shadow:0 12px 42px rgba(21,48,67,.10)}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--ink)}.mark{width:42px;height:42px;border-radius:15px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--blue),var(--mint));font-weight:900;box-shadow:0 12px 30px rgba(36,107,143,.22);transform:rotate(-4deg)}
+    .navlinks{display:flex;align-items:center;gap:20px;color:#36576d;font-weight:700;font-size:.96rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 20px;font-weight:900;background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff;box-shadow:0 16px 34px rgba(36,107,143,.23);transition:.25s ease;white-space:nowrap}.btn:hover{transform:translateY(-2px);box-shadow:0 20px 46px rgba(36,107,143,.30)}.btn.light{background:#fff;color:var(--blue);border:1px solid var(--line);box-shadow:none}.btn.peach{background:linear-gradient(135deg,var(--peach),#ffc38d);color:#5b300f}
+    .hero{min-height:100svh;display:grid;align-items:center;padding:122px 0 68px;position:relative}.hero:before{content:"";position:absolute;inset:auto -12vw 7vh auto;width:46vw;height:46vw;border-radius:50%;background:rgba(123,199,183,.15);filter:blur(10px);z-index:-1}.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:52px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(123,199,183,.15);color:var(--blue);font-weight:900}.dot{width:9px;height:9px;border-radius:50%;background:var(--peach);box-shadow:0 0 0 6px rgba(242,166,109,.18)}
+    h1{font-size:clamp(3.2rem,7.2vw,7rem);line-height:.92;margin:20px 0 18px;color:var(--ink);letter-spacing:-.075em;font-weight:900}.h1-small{display:block;font-size:.34em;letter-spacing:-.035em;color:var(--blue);margin-top:16px;font-weight:800}.lead{font-size:clamp(1.18rem,2vw,1.48rem);color:#425d72;max-width:690px;margin:0}.lead strong{color:var(--blue);font-weight:900}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}.trust div{background:rgba(255,255,255,.70);border:1px solid var(--line);border-radius:22px;padding:17px}.trust b{display:block;font-size:1.08rem;color:var(--blue);font-weight:900}.trust span{display:block;color:var(--muted);font-weight:600;font-size:.95rem;margin-top:2px}
+    .hero-card{position:relative;min-height:620px;border-radius:42px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(155deg,#dff5f5,#fff7ed 54%,#fff);border:1px solid rgba(255,255,255,.78);isolation:isolate}.hero-card:before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 1100'%3E%3Crect width='900' height='1100' fill='%23f9fdff'/%3E%3Ccircle cx='728' cy='188' r='190' fill='%237bc7b7' opacity='.28'/%3E%3Ccircle cx='130' cy='880' r='260' fill='%23f2a66d' opacity='.19'/%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath d='M70 825 C215 710 358 682 510 704 C655 725 770 648 872 520' stroke='%23246b8f' stroke-width='9' opacity='.70'/%3E%3Cpath d='M70 878 C238 756 385 736 540 756 C682 775 782 708 884 592' stroke='%237bc7b7' stroke-width='7' opacity='.70'/%3E%3C/g%3E%3Cg transform='translate(105 150)'%3E%3Crect x='0' y='120' width='250' height='350' rx='28' fill='%23ffffff' stroke='%23246b8f' stroke-opacity='.18'/%3E%3Crect x='38' y='164' width='170' height='16' rx='8' fill='%23246b8f' opacity='.30'/%3E%3Crect x='38' y='218' width='155' height='9' rx='5' fill='%237bc7b7' opacity='.76'/%3E%3Crect x='38' y='254' width='165' height='9' rx='5' fill='%23153043' opacity='.13'/%3E%3Crect x='38' y='290' width='126' height='9' rx='5' fill='%23153043' opacity='.13'/%3E%3Ccircle cx='174' cy='393' r='38' fill='%23f2a66d' opacity='.72'/%3E%3Cpath d='M332 474 L570 272 L810 474 Z' fill='%23ffffff' stroke='%23246b8f' stroke-opacity='.16'/%3E%3Cpath d='M382 474 H758 V718 H382Z' fill='%23ffffff' opacity='.84'/%3E%3Crect x='492' y='552' width='86' height='166' rx='14' fill='%23246b8f' opacity='.62'/%3E%3Crect x='620' y='534' width='90' height='74' rx='14' fill='%237bc7b7' opacity='.62'/%3E%3C/g%3E%3C/svg%3E") center/cover}.hero-card:after{content:"";position:absolute;inset:28px;border:1px solid rgba(36,107,143,.14);border-radius:31px;pointer-events:none}.quote{position:absolute;right:28px;bottom:28px;left:28px;padding:24px;border-radius:28px;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);box-shadow:0 18px 44px rgba(36,107,143,.14)}.quote p{margin:0;color:var(--ink);font-size:1.25rem;line-height:1.45;font-weight:800}.quote span{display:block;color:var(--blue);font-weight:900;margin-top:10px}
+    section{padding:86px 0}.section-kicker{color:var(--blue);font-weight:900;margin-bottom:8px}.section-title{font-size:clamp(2.1rem,4.4vw,4.2rem);line-height:1.05;margin:0 0 18px;color:var(--ink);letter-spacing:-.06em;font-weight:900}.two{display:grid;grid-template-columns:.82fr 1.18fr;gap:48px;align-items:start}.text-card{background:rgba(255,255,255,.80);border:1px solid var(--line);border-radius:var(--radius);padding:34px;box-shadow:0 18px 58px rgba(36,107,143,.08)}.text-card p{margin:0 0 16px;color:#415c70;font-size:1.12rem}.text-card p:last-child{margin-bottom:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.service{position:relative;padding:28px;border-radius:30px;background:rgba(255,255,255,.86);border:1px solid var(--line);min-height:230px;overflow:hidden;box-shadow:0 18px 52px rgba(36,107,143,.08)}.service:before{content:"";position:absolute;inset:auto -42px -58px auto;width:165px;height:165px;border-radius:48px;background:linear-gradient(135deg,rgba(123,199,183,.18),rgba(242,166,109,.18));transform:rotate(18deg)}.num{color:var(--peach);font-size:2.25rem;font-weight:900}.service h3{font-size:1.35rem;color:var(--ink);margin:14px 0 10px;font-weight:900}.service p{color:#566d7f;margin:0;font-weight:600}
+    .areas{background:linear-gradient(135deg,#246b8f,#2f8fb1 58%,#7bc7b7);color:#fff;position:relative;overflow:hidden}.areas:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 18%,rgba(255,255,255,.20),transparent 32vw),radial-gradient(circle at 84% 82%,rgba(242,166,109,.28),transparent 26vw)}.areas .shell{position:relative}.areas .section-title,.areas .section-kicker{color:#fff}.areas p{color:#eaf8fc;font-size:1.15rem}.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.chip{padding:12px 18px;border:1px solid rgba(255,255,255,.30);border-radius:999px;background:rgba(255,255,255,.14);font-weight:900;color:#fff}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}.step{padding:22px;border-radius:24px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18)}.step b{display:block;color:#fff;font-size:1.1rem;margin-bottom:6px;font-weight:900}.step span{color:#e8f7fb;font-weight:600}
+    .gallery{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin-top:34px}.visual{min-height:360px;border-radius:34px;position:relative;overflow:hidden;background:linear-gradient(135deg,#ffffff,#dff5f5);border:1px solid var(--line);box-shadow:var(--shadow)}.visual:before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='520' viewBox='0 0 900 520'%3E%3Crect width='900' height='520' fill='%23ffffff'/%3E%3Ccircle cx='742' cy='108' r='126' fill='%237bc7b7' opacity='.25'/%3E%3Ccircle cx='125' cy='430' r='180' fill='%23f2a66d' opacity='.16'/%3E%3Cpath d='M0 388 C148 280 258 278 405 322 C564 369 737 276 900 132 L900 520 L0 520Z' fill='%23246b8f' opacity='.86'/%3E%3Cpath d='M0 402 C145 292 260 292 404 335 C560 382 740 292 900 150' fill='none' stroke='%237bc7b7' stroke-width='9'/%3E%3Cpath d='M95 312 L250 204 L405 312 Z' fill='%23f2a66d' opacity='.58'/%3E%3Cpath d='M130 312 H370 V448 H130Z' fill='%23fff7ed'/%3E%3Crect x='190' y='356' width='64' height='92' rx='12' fill='%23246b8f' opacity='.70'/%3E%3Crect x='285' y='345' width='48' height='48' rx='10' fill='%237bc7b7' opacity='.78'/%3E%3Cpath d='M548 148 h160 a30 30 0 0 1 30 30 v210 a30 30 0 0 1-30 30 h-160 a30 30 0 0 1-30-30 v-210 a30 30 0 0 1 30-30Z' fill='%23ffffff' opacity='.94'/%3E%3Crect x='560' y='198' width='145' height='10' rx='5' fill='%23246b8f' opacity='.27'/%3E%3Crect x='560' y='238' width='120' height='8' rx='4' fill='%237bc7b7' opacity='.78'/%3E%3Crect x='560' y='270' width='145' height='8' rx='4' fill='%23153043' opacity='.12'/%3E%3Crect x='560' y='302' width='128' height='8' rx='4' fill='%23153043' opacity='.12'/%3E%3C/svg%3E") center/cover}.mini-stack{display:grid;gap:18px}.mini{min-height:171px;border-radius:30px;background:rgba(255,255,255,.86);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}.mini:before{content:"";position:absolute;width:170px;height:170px;background:rgba(123,199,183,.13);border-radius:42px;top:-58px;left:-48px;transform:rotate(20deg)}.mini b{color:var(--ink);font-size:1.45rem;font-weight:900}.mini span{color:var(--muted);font-weight:700}
+    .ig-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.ig-card{position:relative;overflow:hidden;border-radius:28px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 48px rgba(36,107,143,.10);min-height:310px}.ig-card img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.96) contrast(.98)}.ig-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 43%,rgba(21,48,67,.72))}.ig-label{position:absolute;right:18px;left:18px;bottom:16px;z-index:2;color:#fff;font-weight:900}.ig-label small{display:block;color:#bff1e7;font-size:.9rem;margin-top:3px}.source-line{margin-top:12px;color:#6b7d8f;font-weight:800}.note{font-size:.9rem;color:#7b8895;margin-top:12px}.cta{padding:72px 0 92px}.cta-box{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:linear-gradient(135deg,#ffffff,#dff5f5);border:1px solid var(--line);border-radius:38px;padding:40px;box-shadow:var(--shadow)}.cta h2{font-size:clamp(2rem,4vw,3.6rem);line-height:1;margin:0;color:var(--ink);font-weight:900;letter-spacing:-.055em}.cta p{font-size:1.15rem;color:#50687c;margin:12px 0 0}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}.footer{padding:28px 0 44px;color:#657789;font-weight:800}.footer .shell{display:flex;justify-content:space-between;gap:18px;border-top:1px solid var(--line);padding-top:22px}
     @media (max-width:900px){.navlinks{display:none}.hero-grid,.two,.gallery,.cta-box{grid-template-columns:1fr}.hero-card{min-height:520px}.trust,.services,.process,.ig-strip{grid-template-columns:1fr 1fr}.cta-box{align-items:start}.hero{padding-top:106px}.contact-actions{justify-content:flex-start}}
-    @media (max-width:560px){.shell{width:min(100% - 26px,1120px)}.hero-card{min-height:450px;border-radius:30px}.quote{right:18px;left:18px;bottom:18px;padding:18px}.quote p{font-size:1.08rem}.trust,.services,.process,.ig-strip{grid-template-columns:1fr}.btn{width:100%}.actions{flex-direction:column}.text-card,.cta-box{padding:25px}.footer .shell{display:block}.mark{width:38px;height:38px}.brand span{font-size:.95rem}}
+    @media (max-width:560px){.shell{width:min(100% - 26px,1120px)}.hero-card{min-height:450px;border-radius:30px}.quote{right:18px;left:18px;bottom:18px;padding:18px}.quote p{font-size:1.06rem}.trust,.services,.process,.ig-strip{grid-template-columns:1fr}.btn{width:100%}.actions{flex-direction:column}.text-card,.cta-box{padding:25px}.footer .shell{display:block}.mark{width:38px;height:38px}.brand span{font-size:.95rem}h1{font-size:clamp(3rem,16vw,4.6rem)}}
   </style>
 </head>
 <body>
   <header class="topbar">
     <nav class="nav shell" aria-label="ניווט ראשי">
       <a class="brand" href="#top"><span class="mark">גא</span><span>עו״ד גלית אביטל</span></a>
-      <div class="navlinks">
-        <a href="#about">המשרד</a>
-        <a href="#services">תחומי שירות</a>
-        <a href="#areas">אזורי פעילות</a>
-        <a href="#contact">יצירת קשר</a>
-      </div>
+      <div class="navlinks"><a href="#about">המשרד</a><a href="#services">תחומי שירות</a><a href="#areas">אזורי פעילות</a><a href="#contact">יצירת קשר</a></div>
       <a class="btn" href="#contact">לתיאום שיחה</a>
     </nav>
   </header>
-
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="shell hero-grid">
-        <div>
-          <div class="eyebrow">מקרקעין · נדל״ן · ליווי אישי</div>
-          <h1 id="hero-title">גלית אביטל<span class="h1-small">עורכת דין לנדל״ן</span></h1>
-          <p class="lead">ליווי משפטי מקצועי, אדיב ומדויק בעסקאות נדל״ן באזור <strong>ערד, הנגב, מיתר, דימונה, באר שבע והסביבה</strong> — עם זמינות, סדר וביטחון לאורך כל הדרך.</p>
-          <div class="actions">
-            <a class="btn" href="https://wa.me/972545353525" target="_blank" rel="noopener">לקביעת שיחת היכרות</a>
-            <a class="btn light" href="#services">לראות תחומי שירות</a>
-          </div>
-          <div class="trust" aria-label="יתרונות המשרד">
-            <div><b>שקט משפטי</b><span>בדיקה, ניסוח וליווי עד לחתימה</span></div>
-            <div><b>יחס אישי</b><span>שירות נגיש, ברור ומכבד</span></div>
-            <div><b>היכרות אזורית</b><span>ערד והנגב, מיתר ודימונה</span></div>
-          </div>
-        </div>
-        <div class="hero-card" role="img" aria-label="איור נדל״ן ומשפט בנגב">
-          <div class="quote">
-            <p>״עסקת נדל״ן טובה מתחילה בליווי משפטי שמבין גם את הפרטים הקטנים וגם את התמונה הגדולה.״</p>
-            <span>עו״ד גלית אביטל</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="shell two">
-        <div>
-          <div class="section-kicker">המשרד</div>
-          <h2 class="section-title">מקצועיות שמרגישה קרובה.</h2>
-        </div>
-        <div class="text-card">
-          <p>משרד עו״ד גלית אביטל מעניק ליווי משפטי בתחום הנדל״ן והמקרקעין ללקוחות פרטיים, משפחות ומשקיעים באזור הדרום.</p>
-          <p>הגישה פשוטה: להסביר בגובה העיניים, לשמור על האינטרסים שלכם, לזהות סיכונים בזמן, ולהתקדם בצורה מסודרת עד לסגירת העסקה.</p>
-          <p>עמוד האינסטגרם של המשרד משמש כרגע כבסיס לתמונות ולפרטי הקשר, כולל וואטסאפ: <strong>054-5353525</strong>. בהמשך אפשר להחליף לתמונות מקוריות/מאושרות יותר.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="shell">
-        <div class="section-kicker">תחומי שירות</div>
-        <h2 class="section-title">ליווי נדל״ן מקצה לקצה.</h2>
-        <div class="services">
-          <article class="service">
-            <div class="num">01</div>
-            <h3>רכישה ומכירת דירה</h3>
-            <p>בדיקות מקדימות, חוזים, הערות אזהרה, תיאום מול הצדדים וסגירת העסקה בביטחון.</p>
-          </article>
-          <article class="service">
-            <div class="num">02</div>
-            <h3>מגרשים, בתים ונחלות</h3>
-            <p>ליווי בעסקאות מקרקעין באזור הנגב והסביבה, כולל בדיקת זכויות ומסמכי רישום.</p>
-          </article>
-          <article class="service">
-            <div class="num">03</div>
-            <h3>שכירות והסכמים</h3>
-            <p>ניסוח ובדיקת הסכמים, הגנה על זכויות, בטוחות ותנאים מסחריים ומשפטיים.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="areas" class="areas">
-      <div class="shell">
-        <div class="section-kicker">אזורי פעילות</div>
-        <h2 class="section-title">ערד, הנגב והדרום.</h2>
-        <p>ליווי משפטי ללקוחות באזור ערד והנגב, כולל מיתר, דימונה, באר שבע והיישובים בסביבה.</p>
-        <div class="chips" aria-label="יישובים ואזורים">
-          <span class="chip">ערד</span>
-          <span class="chip">רובע האמנים והסביבה</span>
-          <span class="chip">הנגב</span>
-          <span class="chip">מיתר</span>
-          <span class="chip">דימונה</span>
-          <span class="chip">באר שבע</span>
-          <span class="chip">יישובי הדרום</span>
-        </div>
-        <div class="process" aria-label="תהליך ליווי">
-          <div class="step"><b>01 · היכרות</b><span>הבנת העסקה, הצרכים והמסמכים הקיימים.</span></div>
-          <div class="step"><b>02 · בדיקה</b><span>בדיקת זכויות, סיכונים, מועדים ותנאים.</span></div>
-          <div class="step"><b>03 · ניהול</b><span>מו״מ, תיקונים, חתימות ותיאומים.</span></div>
-          <div class="step"><b>04 · סגירה</b><span>מעקב מסודר עד השלמת העסקה והרישום.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="shell">
-        <div class="section-kicker">נראות דיגיטלית</div>
-        <h2 class="section-title">אתר יוקרתי, נקי וברור.</h2>
-        <div class="gallery">
-          <div class="visual" role="img" aria-label="איור חוזה, בית ונוף דרומי"></div>
-          <div class="mini-stack">
-            <div class="mini"><b>אמינות</b><span>שפה משפטית שמוגשת בפשטות.</span></div>
-            <div class="mini"><b>ביטחון</b><span>מסר ממוקד ללקוחות לפני עסקת נדל״ן.</span></div>
-          </div>
-        </div>
-        <div class="ig-strip" aria-label="תמונות מעמוד האינסטגרם של גלית אביטל">
-          <a class="ig-card" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener"><img src="assets/post-real-estate-tax.jpg" alt="פוסט אינסטגרם בנושא מיסוי מקרקעין וחיסכון במס בעסקאות נדל״ן"><span class="ig-label">מיסוי מקרקעין<small>מתוך Instagram @galitavi</small></span></a>
-          <a class="ig-card" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener"><img src="assets/post-commercial-1.jpg" alt="פוסט אינסטגרם בנושא ליווי משפטי מסחרי"><span class="ig-label">ליווי משפטי עסקי<small>תוכן מהרשת החברתית</small></span></a>
-          <a class="ig-card" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener"><img src="assets/post-criminal.jpg" alt="פוסט אינסטגרם בנושא ליווי בהליך פלילי"><span class="ig-label">שירותים נוספים<small>ניתן להחליף לתמונות חדשות</small></span></a>
-        </div>
-        <p class="source-line">קישור אינסטגרם: <a href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener">@galitavi</a></p>
-        <p class="note">הערה: התמונות נלקחו מהעמוד הציבורי לבקשתך לצורך טיוטה. לפרסום קבוע מומלץ לקבל אישור סופי מגלית או להחליף בקבצים מקוריים.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="cta">
-      <div class="shell cta-box">
-        <div>
-          <h2>מתכננים עסקת נדל״ן?</h2>
-          <p>שלחו הודעה בווטסאפ או עברו לעמוד האינסטגרם — לתיאום שיחת היכרות וליווי משפטי מקצועי.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn gold" href="https://wa.me/972545353525" target="_blank" rel="noopener">וואטסאפ 054-5353525</a>
-          <a class="btn" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener">Instagram @galitavi</a>
-        </div>
-      </div>
-    </section>
+    <section class="hero" aria-labelledby="hero-title"><div class="shell hero-grid"><div>
+      <div class="eyebrow"><span class="dot"></span>מקרקעין · נדל״ן · ליווי אישי</div>
+      <h1 id="hero-title">גלית אביטל<span class="h1-small">עורכת דין לנדל״ן</span></h1>
+      <p class="lead">ליווי משפטי מקצועי, אדיב ומדויק בעסקאות נדל״ן באזור <strong>ערד, הנגב, מיתר, דימונה, באר שבע והסביבה</strong> — בשפה ברורה, בגישה נגישה, ועם סדר לאורך כל הדרך.</p>
+      <div class="actions"><a class="btn" href="https://wa.me/972545353525" target="_blank" rel="noopener">לקביעת שיחת היכרות</a><a class="btn light" href="#services">לראות תחומי שירות</a></div>
+      <div class="trust" aria-label="יתרונות המשרד"><div><b>שקט משפטי</b><span>בדיקה, ניסוח וליווי עד לחתימה</span></div><div><b>יחס אישי</b><span>שירות נגיש, ברור ומכבד</span></div><div><b>היכרות אזורית</b><span>ערד והנגב, מיתר ודימונה</span></div></div>
+    </div><div class="hero-card" role="img" aria-label="איור צבעוני של בית, חוזה ונוף דרומי"><div class="quote"><p>עסקת נדל״ן היא רגע גדול. הליווי המשפטי צריך להיות ברור, רגוע ומדויק.</p><span>עו״ד גלית אביטל</span></div></div></div></section>
+    <section id="about"><div class="shell two"><div><div class="section-kicker">המשרד</div><h2 class="section-title">מקצועיות בגובה העיניים.</h2></div><div class="text-card"><p>משרד עו״ד גלית אביטל מעניק ליווי משפטי בתחום הנדל״ן והמקרקעין ללקוחות פרטיים, משפחות ומשקיעים באזור הדרום.</p><p>הגישה פשוטה: להסביר, לעשות סדר, לשמור על האינטרסים שלכם, לזהות סיכונים בזמן, ולהתקדם בצורה בטוחה עד לסגירת העסקה.</p><p>עמוד האינסטגרם של המשרד משמש כרגע כבסיס לתמונות ולפרטי הקשר, כולל וואטסאפ: <strong>054-5353525</strong>. בהמשך אפשר להחליף לתמונות מקוריות/מאושרות יותר.</p></div></div></section>
+    <section id="services"><div class="shell"><div class="section-kicker">תחומי שירות</div><h2 class="section-title">ליווי נדל״ן מקצה לקצה.</h2><div class="services"><article class="service"><div class="num">01</div><h3>רכישה ומכירת דירה</h3><p>בדיקות מקדימות, חוזים, הערות אזהרה, תיאום מול הצדדים וסגירת העסקה בביטחון.</p></article><article class="service"><div class="num">02</div><h3>מגרשים, בתים ונכסים</h3><p>ליווי בעסקאות מקרקעין באזור הנגב והסביבה, כולל בדיקת זכויות ומסמכי רישום.</p></article><article class="service"><div class="num">03</div><h3>שכירות והסכמים</h3><p>ניסוח ובדיקת הסכמים, הגנה על זכויות, בטוחות ותנאים מסחריים ומשפטיים.</p></article></div></div></section>
+    <section id="areas" class="areas"><div class="shell"><div class="section-kicker">אזורי פעילות</div><h2 class="section-title">ערד, הנגב והדרום.</h2><p>ליווי משפטי ללקוחות באזור ערד והנגב, כולל מיתר, דימונה, באר שבע והיישובים בסביבה.</p><div class="chips" aria-label="יישובים ואזורים"><span class="chip">ערד</span><span class="chip">הנגב</span><span class="chip">מיתר</span><span class="chip">דימונה</span><span class="chip">באר שבע</span><span class="chip">יישובי הדרום</span></div><div class="process" aria-label="תהליך ליווי"><div class="step"><b>01 · היכרות</b><span>הבנת העסקה, הצרכים והמסמכים הקיימים.</span></div><div class="step"><b>02 · בדיקה</b><span>בדיקת זכויות, סיכונים, מועדים ותנאים.</span></div><div class="step"><b>03 · ניהול</b><span>מו״מ, תיקונים, חתימות ותיאומים.</span></div><div class="step"><b>04 · סגירה</b><span>מעקב מסודר עד השלמת העסקה והרישום.</span></div></div></div></section>
+    <section><div class="shell"><div class="section-kicker">נראות דיגיטלית</div><h2 class="section-title">אתר נקי, חי ונגיש.</h2><div class="gallery"><div class="visual" role="img" aria-label="איור חוזה, בית ונוף דרומי"></div><div class="mini-stack"><div class="mini"><b>אמינות</b><span>שפה משפטית שמוגשת בפשטות.</span></div><div class="mini"><b>ביטחון</b><span>מסר ממוקד ללקוחות לפני עסקת נדל״ן.</span></div></div></div><div class="ig-strip" aria-label="תמונות מעמוד האינסטגרם של גלית אביטל"><a class="ig-card" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener"><img src="assets/post-real-estate-tax.jpg" alt="פוסט אינסטגרם בנושא מיסוי מקרקעין וחיסכון במס בעסקאות נדל״ן"><span class="ig-label">מיסוי מקרקעין<small>מתוך Instagram @galitavi</small></span></a><a class="ig-card" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener"><img src="assets/post-commercial-1.jpg" alt="פוסט אינסטגרם בנושא ליווי משפטי מסחרי"><span class="ig-label">ליווי משפטי עסקי<small>תוכן מהרשת החברתית</small></span></a><a class="ig-card" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener"><img src="assets/post-criminal.jpg" alt="פוסט אינסטגרם בנושא ליווי בהליך פלילי"><span class="ig-label">שירותים נוספים<small>ניתן להחליף לתמונות חדשות</small></span></a></div><p class="source-line">קישור אינסטגרם: <a href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener">@galitavi</a></p><p class="note">הערה: התמונות נלקחו מהעמוד הציבורי לבקשתך לצורך טיוטה. לפרסום קבוע מומלץ לקבל אישור סופי מגלית או להחליף בקבצים מקוריים.</p></div></section>
+    <section id="contact" class="cta"><div class="shell cta-box"><div><h2>מתכננים עסקת נדל״ן?</h2><p>שלחו הודעה בווטסאפ או עברו לעמוד האינסטגרם — לתיאום שיחת היכרות וליווי משפטי מקצועי.</p></div><div class="contact-actions"><a class="btn peach" href="https://wa.me/972545353525" target="_blank" rel="noopener">וואטסאפ 054-5353525</a><a class="btn" href="https://www.instagram.com/galitavi/" target="_blank" rel="noopener">Instagram @galitavi</a></div></div></section>
   </main>
-
-  <footer class="footer">
-    <div class="shell">
-      <span>© <span id="year"></span> עו״ד גלית אביטל</span>
-      <span>נדל״ן · מקרקעין · ערד והנגב</span>
-    </div>
-  </footer>
+  <footer class="footer"><div class="shell"><span>© <span id="year"></span> עו״ד גלית אביטל</span><span>נדל״ן · מקרקעין · ערד והנגב</span></div></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
